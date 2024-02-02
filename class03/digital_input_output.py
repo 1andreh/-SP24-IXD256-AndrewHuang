@@ -10,23 +10,25 @@ pin41 = None
 pin1 = None
 
 
+button_value = None
+
+
 def setup():
-  global pin41, pin1
+  global pin41, pin1, button_value
 
   M5.begin()
-  #  initialize pin 41 (screen button on Atom53 board) as input:
   pin41 = Pin(41, mode=Pin.IN)
-  #  initialize pin 1 (button connector white wire) as output:
   pin1 = Pin(1, mode=Pin.OUT)
 
 
 def loop():
-  global pin41, pin1
+  global pin41, pin1, button_value
   M5.update()
-  if pin41.value():
-    pin1.off()
-  else:
+  button_value = pin41.value()
+  if button_value == 0:
     pin1.on()
+  else:
+    pin1.off()
   time.sleep_ms(1)
 
 
@@ -41,4 +43,3 @@ if __name__ == '__main__':
       print_error_msg(e)
     except ImportError:
       print("please update to latest firmware")
-
