@@ -28,8 +28,8 @@ if program_state == 'OFF':
     s.bind(('', 80))
     s.listen(5)
 
-    ssid = 'ACCD'
-    password = 'tink1930'
+    ssid = 'WIFI_NAME'
+    password = 'WIFI_PASSWORD'
 
     wifi = network.WLAN(network.STA_IF)
     wifi.active(True)
