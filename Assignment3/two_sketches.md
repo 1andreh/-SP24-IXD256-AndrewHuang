@@ -9,7 +9,7 @@ This assignment introduces my prototype of an electric toy car programmed to dan
 </div>
 
 
-### On State:
+### 'ON' State:
 ```
 if program_state == 'ON':
     # wait for 100 milliseconds (1/10 second):
@@ -28,7 +28,7 @@ if program_state == 'ON':
 In the state **_ON_**, the vehicle moves forward as the servos move in that direction when light is detected. Servo movement stops (.move(90)) when no light is detected - when light value exceeds 40000.
 
 
-### Dance State:
+### 'DANCE' State:
 ```
 elif program_state == 'DANCE':
     # wait for 100 milliseconds (1/10 second):
@@ -48,6 +48,13 @@ In the state of **_DANCE_**, the vehicle's servos are each mapped with two rando
 
 ### Web Server & Button Control
 ```
+wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+wifi.connect(ssid, password)
+```
+Wifi connected to the ssid string and password in order for the ESP32 to connect to the web server. Using HTML & CSS code, I was able to activate state changes using buttons on the web server's interface.
+
+```
 if BtnA.wasPressed():
     print('button pressed!')
     program_state = 'OFF'
@@ -58,3 +65,4 @@ if BtnA.wasPressed():
     servo.move(90)
     servo1.move(90)
 ```
+Buttons on the web server allows easy access to change the state of the vehicle from 'ON' to 'DANCE'. There is one caviat where the user must press the ESP32 button to turn off in order to change the state. This is because OFF state connects the ESP32 to the webserver, constantly checking the wifi and preventing any loops within the state. That is why state 'ON' and 'DANCE' cannot be connecting to the webserver since the states require looping. 
