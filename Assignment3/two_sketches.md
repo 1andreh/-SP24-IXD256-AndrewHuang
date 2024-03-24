@@ -1,11 +1,13 @@
 ## Assignment 3 Project
 This assignment introduces my prototype of an electric toy car programmed to dance and move forward based on light sensor. The whole system is connected to the web server, allowing me to control the vehicle through my phone or laptop. This prototype has gone through several iterations of refinements for making the toy car run on its own without breaking down.
 
+
 ### Sketches:
 <div style="display: flex;">
   <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/3da53d07-3d9a-4805-8d38-25fdb42ac747" alt="Car Sensor" style="width: 100%;">
   <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/442aed4d-3dba-4c2d-a0e5-d8d769b1e0a9" alt="Car Dance" style="width: 100%;">
 </div>
+
 
 ### On State:
 ```
@@ -25,6 +27,7 @@ if program_state == 'ON':
 ```
 In the state **_ON_**, the vehicle moves forward as the servos move in that direction when light is detected. Servo movement stops (.move(90)) when no light is detected - when light value exceeds 40000.
 
+
 ### Dance State:
 ```
 elif program_state == 'DANCE':
@@ -41,6 +44,7 @@ elif program_state == 'DANCE':
       servo1.move(90)
 ```
 In the state of **_DANCE_**, the vehicle's servos are each mapped with two random values ranging from 20-140. Running the loop will allow the servoes to turn at random directions for 1/10 of a second. Setting the servos back to 90 will allow the servos change direction and speed, instead of moving in one direction perpetually.
+
 
 ### Web Server & Button Control
 ```
