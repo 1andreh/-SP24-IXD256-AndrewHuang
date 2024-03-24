@@ -7,7 +7,7 @@ This assignment introduces my prototype of an electric toy car programmed to dan
   <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/3da53d07-3d9a-4805-8d38-25fdb42ac747" alt="Car Sensor" style="width: 100%;">
   <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/442aed4d-3dba-4c2d-a0e5-d8d769b1e0a9" alt="Car Dance" style="width: 100%;">
 </div>
-<br>
+
 ### 'ON' State:
 ```
 if program_state == 'ON':
