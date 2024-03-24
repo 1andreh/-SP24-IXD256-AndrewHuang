@@ -66,3 +66,6 @@ if BtnA.wasPressed():
     servo1.move(90)
 ```
 Buttons on the web server allow easy access to change the state of the vehicle from 'ON' to 'DANCE'. There is one caveat: the user must press the ESP32 button to turn it off in order to change the state. This is because the 'OFF' state connects the ESP32 to the web server, constantly checking the Wi-Fi and preventing any loops within the state. That is why states 'ON' and 'DANCE' cannot connect to the web server, as they require looping.
+
+
+
