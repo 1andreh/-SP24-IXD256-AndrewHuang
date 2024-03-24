@@ -48,6 +48,7 @@ In the state of **_DANCE_**, the vehicle's servos are each mapped with two rando
 
 ### Web Server & Button Control
 ```
+# Connects to Web Server
 wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
 wifi.connect(ssid, password)
@@ -55,6 +56,7 @@ wifi.connect(ssid, password)
 Wifi connected to the ssid string and password in order for the ESP32 to connect to the web server. Using HTML & CSS code, I was able to activate state changes using buttons on the web server's interface.
 
 ```
+# Button to Control States
 if BtnA.wasPressed():
     print('button pressed!')
     program_state = 'OFF'
