@@ -24,8 +24,7 @@ if program_state == 'ON':
         time.sleep(1)
     time.sleep_ms(100)
 ```
-In the state **_ON_**, the vehicle moves forward as the servos move in that direction when light is detected. Servo movement stops (.move(90)) when no light is detected - when light value exceeds 40000.
-
+In the **_ON_** state, the vehicle moves forward as the servos move in that direction when light is detected. Servo movement stops (.move(90)) when no light is detected, indicated by a light value exceeding 40000.
 
 ### 'DANCE' State:
 ```
@@ -42,7 +41,7 @@ elif program_state == 'DANCE':
       servo.move(90)
       servo1.move(90)
 ```
-In the state of **_DANCE_**, the vehicle's servos are each mapped with two random values ranging from 20-140. Running the loop will allow the servoes to turn at random directions for 1/10 of a second. Setting the servos back to 90 will allow the servos change direction and speed, instead of moving in one direction perpetually.
+In the **_DANCE_** state, the vehicle's servos are each assigned two random values ranging from 20 to 140. Running the loop allows the servos to turn in random directions for 1/10 of a second. Resetting the servos to 90 enables them to change direction and speed, instead of continuously moving in one direction.
 
 
 ### Web Server & Button Control
@@ -52,7 +51,7 @@ wifi = network.WLAN(network.STA_IF)
 wifi.active(True)
 wifi.connect(ssid, password)
 ```
-Wifi connected to the ssid string and password in order for the ESP32 to connect to the web server. Using HTML & CSS code, I was able to activate state changes using buttons on the web server's interface.
+The Wi-Fi is connected to the SSID string and password to enable the ESP32 to connect to the web server. Using HTML and CSS code, I was able to activate state changes using buttons on the web server's interface.
 
 ```
 # Button to Control States
@@ -66,4 +65,4 @@ if BtnA.wasPressed():
     servo.move(90)
     servo1.move(90)
 ```
-Buttons on the web server allows easy access to change the state of the vehicle from 'ON' to 'DANCE'. There is one caviat where the user must press the ESP32 button to turn off in order to change the state. This is because OFF state connects the ESP32 to the webserver, constantly checking the wifi and preventing any loops within the state. That is why state 'ON' and 'DANCE' cannot be connecting to the webserver since the states require looping. 
+Buttons on the web server allow easy access to change the state of the vehicle from 'ON' to 'DANCE'. There is one caveat: the user must press the ESP32 button to turn it off in order to change the state. This is because the 'OFF' state connects the ESP32 to the web server, constantly checking the Wi-Fi and preventing any loops within the state. That is why states 'ON' and 'DANCE' cannot connect to the web server, as they require looping.
