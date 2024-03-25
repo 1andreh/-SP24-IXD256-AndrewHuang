@@ -65,16 +65,16 @@ if BtnA.wasPressed():
     servo.move(90)
     servo1.move(90)
 ```
-Buttons on the web server allow easy access to change the state of the vehicle from 'ON' to 'DANCE'. There is one caveat: the user must press the ESP32 button to turn it off in order to change the state. This is because the 'OFF' state connects the ESP32 to the web server, constantly checking the Wi-Fi and preventing any loops within the state. That is why states 'ON' and 'DANCE' cannot connect to the web server, as they require looping.
+Buttons on the web server allow easy access to change the state of the vehicle from 'ON' to 'DANCE'. However, there is one caveat: the user must press the ESP32 button to turn it off in order to change the state. This is necessary because the 'OFF' state connects the ESP32 to the web server, constantly checking the Wi-Fi and preventing any loops within the state. Therefore, states 'ON' and 'DANCE' cannot connect to the web server, as they require looping.
 
 ### Version 1 Prototype
 ![IMG_9881](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/61a48ab1-08af-49e0-91b7-58ea4b67b0b6)
-The electronics did not hold very well inside the first casing of the shark car. The wheels were tilted due to the heavy center. This prototype vehicle only last for 30 seconds of running.
+The electronics did not hold very well inside the first casing of the shark car. The wheels were tilted due to the heavy center. This prototype vehicle only lasted for 30 seconds of running.
 
 ### Version 2 Prototype
 ![IMG_9957](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/ed6ead05-1b91-4520-bec1-6033b47ef874)
 ![2nd prototype inside](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/52cefd42-2cc0-4f6f-a2eb-b5a094051f62)
-All electronics are now hidden. The secret method was glueing the lego connectors onto the phone to connect to the servos instead of screws. This allowed the prototype to continue running as long as there were battery in the battery pack. However, the only problem is the shark can only move forward because the third back wheel is so wide that even if one of the servos are running faster, the vehicle still moves forward in a straight direction.
+All electronics are now hidden. The secret method was gluing the LEGO connectors onto the phone to connect to the servos instead of screws. This allowed the prototype to continue running as long as there was enough battery in the battery pack. However, the only problem is the shark can only move forward because the third back wheel is so wide that even if one of the servos is running faster, the vehicle still moves forward in a straight direction.
 
 ### Next Steps
 I would explore bearings to allow the third back wheel to tilt, or even make the width of the back wheel narrower, so my next prototype can turn in different directions.
