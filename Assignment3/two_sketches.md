@@ -72,6 +72,9 @@ Buttons on the web server allow easy access to change the state of the vehicle f
 The electronics did not hold very well inside the first casing of the shark car. The wheels were tilted due to the heavy center. This prototype vehicle only last for 30 seconds of running.
 
 ### Version 2 Prototype
-![2nd prototype inside](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/52cefd42-2cc0-4f6f-a2eb-b5a094051f62)
 ![IMG_9957](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/ed6ead05-1b91-4520-bec1-6033b47ef874)
-All electronics are now hidden. The secret method was glueing the lego connectors onto the phone to connect to the servos instead of screws. This allowed the prototype to continue running as long as there were battery in the battery pack.
+![2nd prototype inside](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/52cefd42-2cc0-4f6f-a2eb-b5a094051f62)
+All electronics are now hidden. The secret method was glueing the lego connectors onto the phone to connect to the servos instead of screws. This allowed the prototype to continue running as long as there were battery in the battery pack. However, the only problem is the shark can only move forward because the third back wheel is so wide that even if one of the servos are running faster, the vehicle still moves forward in a straight direction.
+
+### Next Steps
+I would explore bearings to allow the third back wheel to tilt, or even make the width of the back wheel narrower, so my next prototype can turn in different directions.
