@@ -74,7 +74,7 @@ The electronics did not hold very well inside the first casing of the shark car.
 ### Version 2 Prototype
 ![IMG_9957](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/ed6ead05-1b91-4520-bec1-6033b47ef874)
 ![2nd prototype inside](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/52cefd42-2cc0-4f6f-a2eb-b5a094051f62)
-All electronics are now hidden. The secret method was gluing the LEGO connectors onto the phone to connect to the servos instead of screws. This allowed the prototype to continue running as long as there was enough battery in the battery pack. However, the only problem is the shark can only move forward because the third back wheel is so wide that even if one of the servos is running faster, the vehicle still moves forward in a straight direction.
+All electronics are now hidden. The secret method was gluing the LEGO connectors onto the pink foam to connect to the servos instead of screws. This allowed the prototype to continue running as long as there was enough battery in the battery pack. However, the only problem is the shark can only move forward because the third back wheel is so wide that even if one of the servos is running faster, the vehicle still moves forward in a straight direction.
 
 ### Next Steps
 I would explore bearings to allow the third back wheel to tilt or even make the width of the back wheel narrower so that my next prototype can turn in different directions. Once the shark is able to move in different directions, I will program it to move in circles by increasing the speed on one servo, and every 300ms, the other servo would have more speed to create the movement of the shark shaking its tail and moving side to side.
