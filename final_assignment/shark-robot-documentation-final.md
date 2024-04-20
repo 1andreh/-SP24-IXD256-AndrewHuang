@@ -23,6 +23,3 @@ if program_state == 'DANCE':
 ```
 I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
 
-
-Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.
-Explain the reasoning behind your final choice of the project concept, whether it’s based on one of the initial sketches, a combination of or a departure from the original concepts.
