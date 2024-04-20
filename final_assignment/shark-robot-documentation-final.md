@@ -10,8 +10,6 @@ I ended up following this concept of having two servoe as front wheels with a ro
 
 ### Sketch 2: 
 ![Car Dance](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/7ce1c037-4a1d-41da-a4b7-354855bf3f4f)
-I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE', 2. program_state = 'ON'
-
 ```
 if program_state == 'DANCE':
     random_num_1 = random.randint(20, 140)
@@ -23,6 +21,8 @@ if program_state == 'DANCE':
       servo.move(90)
       servo1.move(90)
 ```
+I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
+
 
 Provide a description of your initial project idea and include images of the concept sketches that you created in Part 1 of this assignment.
 Explain the reasoning behind your final choice of the project concept, whether it’s based on one of the initial sketches, a combination of or a departure from the original concepts.
