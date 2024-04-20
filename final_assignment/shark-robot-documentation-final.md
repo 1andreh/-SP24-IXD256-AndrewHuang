@@ -28,15 +28,20 @@ MVP Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang
 In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input output. I used an extension battery pack to allow the vehicle to move freely. The MVP of this vehicle has two states, to move forward, detecting light and stopping when no light has been detected and the second state allowing it to dance.
 
 ### Hardware
-* Left Servo - moves the left wheel of the vehicle.
-* Right Servo - moves the right wheel of the vehicle.
-* Distance Sensor - the vehicle detects the distance of object in front of sensor, changing program states when detecting an                        object close the the sensor, chanigng the vehicle's program_state = 'BACKUP' when detecting an object 
-* LED Strip - changes colors based on program state, 'ON', 'STOP', 'BACKUP'.
-* M5 Battery Pack - allows the robot to become wireless and move anywhere on flat surface.
-* M5 Extension - allows AtomS3 to receive four unit inputs instead of one unit.
-* Rubber Tires - keeps traction for the wheels to turn the robot, preventing the vehicle to slip.
+* **20lb Pink Foam Shark Model** - case for the electronic firmware to go inside with a refined design of a spaceship shark 
+* **Rubber Tires** - keeps traction for the wheels to turn the robot, preventing the vehicle to slip.
+* **Bottom Cover** - screwed into the bottom, covers the electronics inside the shark robot
+* **Lego Connectors** - connects the firmware onto the phone
 
-### Hardware
+
+### Firmware
+
+* **Left Servo** - moves the left wheel of the vehicle.
+* **Right Servo** - moves the right wheel of the vehicle.
+* **Distance Sensor** - the vehicle detects the distance of object in front of sensor, changing program states when detecting an                        object close the the sensor, chanigng the vehicle's program_state = 'BACKUP' when detecting an object 
+* **LED Strip** - changes colors based on program state, 'ON', 'STOP', 'BACKUP'.
+* **M5 Battery Pack** - allows the robot to become wireless and move anywhere on flat surface.
+* **M5 Extension** - allows AtomS3 to receive four unit inputs instead of one unit.
 
 ```
 if program_state == 'OFF':
