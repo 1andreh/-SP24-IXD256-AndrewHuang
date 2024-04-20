@@ -53,10 +53,10 @@ if program_state == 'OFF':
     ip_address = ip_list[0]
     # finished connecting to wifi
 ```
+I learned how to connect the vehicle with HTTP web server, so that I can control the veihcle through my phone's web browser. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
+
 ### Challenge Faced
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' in order to change program_state to 'DANCE'
-
-I learned how to connect the vehicle with HTTP web server, so that I can control the veihcle through my phone's web browser. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
 
 
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
