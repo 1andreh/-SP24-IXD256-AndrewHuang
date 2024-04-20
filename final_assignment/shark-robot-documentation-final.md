@@ -87,7 +87,72 @@ based on each state, the LED color is changed on the LED strip to signify that t
 * **M5 Extension** - allows AtomS3 to receive four unit inputs instead of one unit.
 
 ### Software
-#### Functions States 
+#### State Highlights
+##### State: ON
+```
+    distance = tof_0.get_distance()
+    print(distance)
+    time.sleep_ms(100)
+    
+    if program_state == 'ON':
+        if distance < 5.0:
+            print("DETECTED")
+            program_state = 'STOP'
+        else:
+            servo.move(65)
+            servo1.move(120)
+            time.sleep(1)
+            time.sleep_ms(100)
+            c = get_color(0, 255, 0) # green color
+            rgb.fill_color(c)
+        label1.setText('Press to')
+        label2.setText('Turn Off')
+```
+When the vehicle does not detect an object (i.e. the value greater than 5.0) it will move forward continuously. The LED turns green when the vehicle is moving forward while it's in 'ON' state. When the vehicle detects an object close (i.e. the value less than 5.0), it will change to program_state = 'STOP'. 
+
+##### State: STOP
+```
+elif program_state == 'STOP':
+    c = get_color(255, 0, 0) # red color
+    rgb.fill_color(c)
+    servo.move(90)
+    servo1.move(90)
+    time.sleep_ms(2000)
+    program_state = 'BACKUP'
+    print("program_state: ", program_state)
+```
+When the vehicle is in STOP, it the servos stop moving for 2 seconds, then changes states to 'BACKUP'. The LED changes color to red during state 'STOP'.
+
+##### State: BACKUP
+```
+elif program_state == 'BACKUP':
+    c = get_color(0, 0, 255) # blue color
+    rgb.fill_color(c)
+    print("back up..")
+    servo.move(105)
+    servo1.move(75)
+    time.sleep_ms(3000)
+    program_state = "LOOKING"
+    print('program_state =', program_state)
+```
+
+##### State: LOOKING
+```
+elif program_state == "LOOKING":
+    #distance = tof_0.get_distance()
+    if(distance) < 5.0:
+        print("looking for space.. ", distance)
+        servo.move(75)
+        servo1.move(70)
+        time.sleep_ms(500)
+    else:
+        print("NO OBSTACLE")
+        # stop both servos:
+        servo.move(90)
+        servo1.move(90)
+        program_state = "ON"
+        print('program_state =', program_state)
+```
 
 
 #### HTTP Web Server 
