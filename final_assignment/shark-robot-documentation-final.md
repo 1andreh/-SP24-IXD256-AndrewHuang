@@ -80,6 +80,11 @@ based on each state, the LED color is changed on the LED strip to signify that t
 * **M5 Battery Pack** - allows the robot to become wireless and move anywhere on flat surface.
 * **M5 Extension** - allows AtomS3 to receive four unit inputs instead of one unit.
 
+### Software
+#### Functions States 
+
+
+#### HTTP Web Server 
 ```
 if program_state == 'OFF':
     # code to create web server and connect to wifi
@@ -108,7 +113,7 @@ if program_state == 'OFF':
 ```
 I learned how to connect the vehicle with HTTP web server to control the vehicle through web browser on any devices. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
 
-### HTML Web Browser
+#### HTML Web Content
 ```
 def web_page():
     global program_state
@@ -138,7 +143,7 @@ def web_page():
 ```
 The web browser consists of two buttons states that control the program states of the two vehicles.
 
-#### Challenge and Approach
+#### Challenges with Web Server and Approach
 ```
 if BtnA.wasPressed():
   print('button pressed!')
@@ -154,9 +159,9 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 
-
 _
 
+** Dont forget importing a diagram image
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
 
 Hardware
