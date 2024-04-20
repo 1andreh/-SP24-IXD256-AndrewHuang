@@ -35,11 +35,48 @@ In order for my vehicle to move, I connected my servos and light sensors to Atom
 
 
 ### Firmware
-
+#### Servos
 * **Left Servo** - moves the left wheel of the vehicle.
 * **Right Servo** - moves the right wheel of the vehicle.
-* **Distance Sensor** - the vehicle detects the distance of object in front of sensor, changing program states when detecting an                        object close the the sensor, chanigng the vehicle's program_state = 'BACKUP' when detecting an object 
+
+```
+if program_state == 'ON':
+    if distance < 5.0:
+        print("DETECTED")
+        program_state = 'STOP'
+    else:
+        servo.move(65)
+        servo1.move(120)
+```
+As long as the distance sensor is detecting no objects in front of the vehicle, the servoes will move, making the shark robot move forward. The servos have different move values based on different states the robot is in.
+
+#### Distance Sensor
+* **Distance Sensor** - the vehicle detects the distance of object in front of sensor, changing program states when detecting                           an object close the the sensor, chanigng the vehicle's program_state = 'BACKUP' when detecting an                               object.
+```
+    distance = tof_0.get_distance()
+    print(distance)
+    if distance < 5.0:
+        # DETECTED
+    else:
+        # NOT DETECTED
+```
+The program checks to see whether the distance sensor has detected any objects close (i.e. less than the value of 5.0). The program will continuously loop to check if any objects are detected in front of the vehicle.
+
+#### LED Strip
 * **LED Strip** - changes colors based on program state, 'ON', 'STOP', 'BACKUP'.
+```
+if program_state == 'STOP':
+    c = get_color(255, 0, 0) # red color
+    rgb.fill_color(c)
+if program_state == 'BACKUP':
+    c = get_color(0, 0, 255) # blue color
+    rgb.fill_color(c)
+    c = get_color(0, 255, 0) # green color
+if program_state == 'ON':
+    rgb.fill_color(c)
+```
+based on each state, the LED color is changed on the LED strip to signify that the vehicle is in a certain state. For example, on 'STOP' state, the color of the vehicle's LED light turns red.
+
 * **M5 Battery Pack** - allows the robot to become wireless and move anywhere on flat surface.
 * **M5 Extension** - allows AtomS3 to receive four unit inputs instead of one unit.
 
