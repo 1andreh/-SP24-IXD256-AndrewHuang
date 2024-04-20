@@ -102,5 +102,19 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 
 
 
+_
 
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
+
+Hardware
+
+List all the separate hardware components used in your project and briefly explain what they do. To create a list with markdown syntax, use -, *, or + characters with each line of text:
+
+item 1
+item 2
+etc.
+Include a schematic diagram image (hand-drawn is OK) showing all the wiring connections between the M5Stack AtomS3 board and other components.
+
+In addition, include at least one photo showing your hardware wiring. This can be several close-ups with the goal of showing how the wiring connections are made.
+_
+
