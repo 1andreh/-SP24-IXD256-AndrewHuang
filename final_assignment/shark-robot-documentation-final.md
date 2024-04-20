@@ -231,11 +231,10 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 ### Mechanical Design
-![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/057797df-16cf-4b78-9d91-774a11fa4adf){ width=50% }
+![shark-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/18531d19-cfd1-4f9c-9ddf-d8cc4c35b385)
 ![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/f9d8cead-84a6-4d64-aab3-0dc5d359f095){ width=50% }
 ![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/44bf4c48-02a6-4863-9e5c-ae67250be2e4)
-![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d){ width=50% }
-
+<img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d" alt="white-robo-shark" width="50%">
 
 ### Outcome
 Summary:
