@@ -24,6 +24,8 @@ if program_state == 'DANCE':
 I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
 
 ## Implementation
+![electric-chasis](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/1f5b9853-e32b-4224-a5bd-326c36e7d7ed)
+
 MVP Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)  
 In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input output. I used an extension battery pack to allow the vehicle to move freely. The MVP of this vehicle has two states, to move forward, detecting light and stopping when no light has been detected and the second state allowing it to dance.
 
@@ -33,6 +35,10 @@ In order for my vehicle to move, I connected my servos and light sensors to Atom
 * **Bottom Cover** - screwed into the bottom, covers the electronics inside the shark robot
 * **Lego Connectors** - connects the firmware onto the phone
 
+![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/057797df-16cf-4b78-9d91-774a11fa4adf)
+![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/f9d8cead-84a6-4d64-aab3-0dc5d359f095)
+![Uploading shark-pockets.jpg…]()
+![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d)
 
 ### Firmware
 #### Servos
@@ -159,6 +165,9 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 
+
+
+![Uploading mock-robo-shark.jpg…]()
 _
 make sure to add diagram flow
 make sure to add images of milled pockets and image of covered
