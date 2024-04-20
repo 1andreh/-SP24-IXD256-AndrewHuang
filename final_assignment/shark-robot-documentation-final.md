@@ -133,6 +133,7 @@ elif program_state == 'BACKUP':
     program_state = "LOOKING"
     print('program_state =', program_state)
 ```
+Once in state of 'BACKUP', the LED light turns blue, and the servos move the vehicle in reverse, away from the object it has detected. After 3 seconds of moving in reverse direction, the vehicle's state changes to 'LOOKING'.
 
 ##### State: LOOKING
 ```
@@ -151,7 +152,7 @@ elif program_state == "LOOKING":
         program_state = "ON"
         print('program_state =', program_state)
 ```
-
+Inside program state 'LOOKING', the distance sensor detects for open space without any objects in front of the vehicle. The servos will rotate the vehicle until the sensor has detected an open space for the Robot to move forward. Once the distance sensor detects an open space, the vehicle's program state will change to 'ON'.
 
 
 ### Integrations
