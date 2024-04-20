@@ -238,7 +238,7 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 
 <div style="display: flex;">
   <div style="flex: 50%; padding: 5px;">
-    <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d" alt="white-robo-shark" style="width: 100%;">
+    <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/44bf4c48-02a6-4863-9e5c-ae67250be2e4" alt="white-robo-shark" style="width: 100%;">
   </div>
   <div style="flex: 50%; padding: 5px;">
     <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d" alt="white-robo-shark" style="width: 100%;">
@@ -252,8 +252,8 @@ Summary:
 
 
 ### Project references
-[UI Flow](https://uiflow2.m5stack.com)
-[Thonny pythong](https://thonny.org)
+[UI Flow](https://uiflow2.m5stack.com) 
+[Thonny Python](https://thonny.org)
 
 _
 
