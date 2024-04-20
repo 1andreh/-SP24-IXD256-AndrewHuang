@@ -24,12 +24,39 @@ if program_state == 'DANCE':
 I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
 
 ## Implementation: MVP
+Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)
 In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input output. I used an extension battery pack to allow the vehicle to move freely. The MVP of this vehicle has two states, to move forward, detecting light and stopping when no light has been detected and the second state allowing it to dance.
 
+```
+if program_state == 'OFF':
+    # code to create web server and connect to wifi
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.bind(('', 80))
+    s.listen(5)
+
+    ssid = 'WIFI_NAME'
+    password = 'PASSWORD'
+
+    wifi = network.WLAN(network.STA_IF)
+    wifi.active(True)
+    wifi.connect(ssid, password)
+
+    print('connect to WiFi...')
+    while wifi.isconnected() == False:
+      print('.', end='')
+      time.sleep_ms(100)
+
+    print('WiFi connection successful')
+    print(wifi.ifconfig())
+    
+    ip_list = wifi.ifconfig()
+    ip_address = ip_list[0]
+    # finished connecting to wifi
+```
 ### Challenge Faced
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' in order to change program_state to 'DANCE'
 
 I learned how to connect the vehicle with HTTP web server, so that I can control the veihcle through my phone's web browser. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
-[v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)
+
 
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
