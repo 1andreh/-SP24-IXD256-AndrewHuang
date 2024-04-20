@@ -35,10 +35,12 @@ In order for my vehicle to move, I connected my servos and light sensors to Atom
 * **Bottom Cover** - screwed into the bottom, covers the electronics inside the shark robot
 * **Lego Connectors** - connects the firmware onto the phone
 
-![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/057797df-16cf-4b78-9d91-774a11fa4adf)
-![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/f9d8cead-84a6-4d64-aab3-0dc5d359f095)
-![Uploading shark-pockets.jpg…]()
-![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d)
+![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/057797df-16cf-4b78-9d91-774a11fa4adf){ width=50% }
+![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/f9d8cead-84a6-4d64-aab3-0dc5d359f095){ width=50% }
+![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/44bf4c48-02a6-4863-9e5c-ae67250be2e4)
+
+![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d){ width=50% }
+
 
 ### Firmware
 #### Servos
@@ -154,6 +156,11 @@ elif program_state == "LOOKING":
         print('program_state =', program_state)
 ```
 
+##### Diagram
+[Sharkshark-robot-diagram.pdf](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15049552/Sharkshark-robot-diagram.pdf)
+
+
+
 
 #### HTTP Web Server 
 ```
@@ -230,12 +237,9 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 
+![mock-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/2c5dd04f-ef85-4c20-98ed-1c208773a3ff)
 
-
-![Uploading mock-robo-shark.jpg…]()
 _
-make sure to add diagram flow
-make sure to add images of milled pockets and image of covered
 
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
 
