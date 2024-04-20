@@ -246,28 +246,18 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 </div>
 
 ### Outcome
-Summary:
+Summary: 
+-
+Summarize the results of your final project implementation and include at least 2 photos of the prototype and a video walkthrough of the functioning demo.
+-
 ![mock-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/2c5dd04f-ef85-4c20-98ed-1c208773a3ff)
 ![backside-roboshark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5a6ce73e-c64f-43cd-9651-93a3f35ecc4b)
 
+### Conclusion
+-
+As you wrap up the project, reflect on your experience of creating it. Use this as an opportunity to mention any discoveries or challenges you came across along the way. If there is anything you would have done differently, or have a chance to continue the project development given more time or resources, it’s a good way to conclude this section.
+-
 
 ### Project references
-[UI Flow](https://uiflow2.m5stack.com) 
-[Thonny Python](https://thonny.org)
-
-_
-
-Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
-
-Hardware
-
-List all the separate hardware components used in your project and briefly explain what they do. To create a list with markdown syntax, use -, *, or + characters with each line of text:
-
-item 1
-item 2
-etc.
-Include a schematic diagram image (hand-drawn is OK) showing all the wiring connections between the M5Stack AtomS3 board and other components.
-
-In addition, include at least one photo showing your hardware wiring. This can be several close-ups with the goal of showing how the wiring connections are made.
-_
+[UI Flow](https://uiflow2.m5stack.com)  [Thonny Python](https://thonny.org)
 
