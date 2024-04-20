@@ -53,10 +53,54 @@ if program_state == 'OFF':
     ip_address = ip_list[0]
     # finished connecting to wifi
 ```
-I learned how to connect the vehicle with HTTP web server, so that I can control the veihcle through my phone's web browser. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
+I learned how to connect the vehicle with HTTP web server to control the vehicle through web browser on any devices. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
 
-### Challenge Faced
-Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' in order to change program_state to 'DANCE'
+#### HTML Web Browser
+```
+def web_page():
+    global program_state
+    html = """
+    <html>
+        <head>
+            <title>Web Server</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="icon" href="data:,">
+            <style>
+                html{font-family: Helvetica; display:inline-block; margin: 0px auto; text-align: center;}
+                h1{color: #0F3376; padding: 2vh;}
+                p{font-size: 1.5rem;}
+                .button{display: inline-block; background-color: #e7bd3b; border: none; border-radius: 4px; color: white; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}
+                .button2{background-color: #4286f4;}
+            </style>
+        </head>
+        <body>
+            <h1>Web Server</h1> 
+            <p>program state: <strong>""" + program_state + """</strong></p>
+            <p><a href="/?state=on"><button class="button">ON</button></a></p>
+            <!--<p><a href="/?state=off"><button class="button button2">OFF</button></a></p>-->
+            <p><a href="/?state=dance"><button class="button button2">DANCE</button></a></p>
+        </body>
+    </html>"""
+    return html
+```
+The web browser consists of two buttons states that control the program states of the two vehicles.
+
+```
+if BtnA.wasPressed():
+  print('button pressed!')
+  program_state = 'OFF'
+  label0.setColor(0xff2727, 0x000000)
+  label0.setText('Status: OFF')
+  print(program_state)
+  label1.setText('1. ON')
+  label2.setText('2. Dance')
+  servo.move(90)
+  servo1.move(90)
+```
+### Challenge and Approach
+Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
+
+
 
 
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
