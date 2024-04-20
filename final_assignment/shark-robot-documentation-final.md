@@ -238,7 +238,14 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 
 
 ### Outcome
+Summary:
 ![mock-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/2c5dd04f-ef85-4c20-98ed-1c208773a3ff)
+![backside-roboshark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5a6ce73e-c64f-43cd-9651-93a3f35ecc4b)
+
+
+### Project references
+[UI Flow](https://uiflow2.m5stack.com)
+[Thonny pythong](https://thonny.org)
 
 _
 
