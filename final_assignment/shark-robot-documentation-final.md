@@ -160,8 +160,9 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 
 
 _
+make sure to add diagram flow
+make sure to add images of milled pockets and image of covered
 
-** Dont forget importing a diagram image
 Explain your process of prototype development including all applicable aspects such as hardware (electronics), firmware (MicroPython code), software (HTML/CSS/JavaScript or other code), integrations (Adafruit IO, IFTTT, etc.), enclosure and mechanical design. Use a separate subheader for each part:
 
 Hardware
