@@ -55,7 +55,7 @@ if program_state == 'OFF':
 ```
 I learned how to connect the vehicle with HTTP web server to control the vehicle through web browser on any devices. Using the tutorial from Nikita, the code connects to an ip address through WIFI, printing out the ip address to connect to the vehicle. There were two CTA buttons that allowed the vehicle to change states. 
 
-#### HTML Web Browser
+### HTML Web Browser
 ```
 def web_page():
     global program_state
@@ -85,6 +85,7 @@ def web_page():
 ```
 The web browser consists of two buttons states that control the program states of the two vehicles.
 
+### Challenge and Approach
 ```
 if BtnA.wasPressed():
   print('button pressed!')
@@ -97,7 +98,6 @@ if BtnA.wasPressed():
   servo.move(90)
   servo1.move(90)
 ```
-### Challenge and Approach
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 
