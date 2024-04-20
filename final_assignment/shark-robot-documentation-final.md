@@ -1,5 +1,4 @@
 # Spaceship Shark Robot
-
 ## Introduction
 After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection.
 So I started sketching two different ways for the vehicle to trigger the responses.
