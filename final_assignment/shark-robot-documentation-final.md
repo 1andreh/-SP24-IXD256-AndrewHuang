@@ -24,6 +24,7 @@ I wanted the robot to dance in a sequence because I wanted to learn how to contr
 ## Implementation
 ![electric-chasis](electric-chasis.jpg)
 
+
 MVP Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)  
 In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input and output through code. I utilized an extension battery pack to enable the vehicle to move freely. The MVP of this vehicle has two states: moving forward, detecting light, and stopping when no light has been detected, and the second state allowing it to dance.
 
