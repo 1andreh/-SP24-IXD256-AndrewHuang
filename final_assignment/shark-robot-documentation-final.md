@@ -53,7 +53,7 @@ if program_state == 'ON':
 As long as the distance sensor detects no objects in front of the vehicle, the servos will move, causing the shark robot to move forward. The servos have different movement values based on the various states the robot is in.
 
 #### Distance Sensor
-* **Distance Sensor** - The vehicle detects the distance of objects in front of the sensor, changing program states when                                detecting an object close to the sensor, switching the vehicle's program_state to 'BACKUP' when an                              object is detected.
+* **Distance Sensor** - The vehicle detects the distance of objects in front of the sensor, changing program states when detecting an object close to the sensor, switching the vehicle's program_state to 'BACKUP' when an object is detected.
 ```
     distance = tof_0.get_distance()
     print(distance)
