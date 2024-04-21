@@ -7,7 +7,7 @@ After exploring servos and sensors, I wanted to learn how to build a vehicle tha
 I ended up following the concept of using two servos as front wheels with a rolling back wheel to minimize space while enabling the vehicle to move forward, backward, turn left, and right. I also implemented sensors to enable the vehicle to respond to objects. Initially, I explored the light sensor, but ultimately chose a distance sensor for its practicality in detecting objects within a room environment.
 
 ### Sketch 2: 
-![Car Dance](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/7ce1c037-4a1d-41da-a4b7-354855bf3f4f)
+![Car Dance](car-dance.jpg)
 ```
 if program_state == 'DANCE':
     random_num_1 = random.randint(20, 140)
