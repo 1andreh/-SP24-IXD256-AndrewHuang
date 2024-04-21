@@ -35,7 +35,7 @@ In order for my vehicle to move, I connected my servos and light sensors to Atom
 
 
 ### Firmware
-[Sharkshark-robot-diagram.pdf](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15049552/Sharkshark-robot-diagram.pdf)
+![Shark Robot Flow Diagram](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/96a8dfb3-a210-447a-baad-9fe099265458)
 
 #### Servos
 * **Left Servo** - moves the left wheel of the vehicle.
@@ -231,8 +231,8 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 
 ### Mechanical Design
 ![shark-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/4e940049-1634-4940-931a-55ad55d903c2)
-![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/b5eb67f4-c12b-423f-8c65-af88a1f521ef)
 ![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/954cca48-68f6-40e7-b0fe-bfdb847472a3)
+![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/b5eb67f4-c12b-423f-8c65-af88a1f521ef)
 ![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/e19a45a8-fda6-49f2-b712-474e24c33a13)
 
 
