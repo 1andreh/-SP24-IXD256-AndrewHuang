@@ -233,14 +233,14 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 ![shark-pockets](shark-pockets.jpg)
 ![filled-pockets](filled-pockets.jpg)
 ![high-build-shark](high-build-shark.jpg)
-![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/e19a45a8-fda6-49f2-b712-474e24c33a13)
+![white-robo-shark](white-robo-shark.jpg)
 
 
 ### Outcome
 The Robot Shark can have multiple program states, enabling the vehicle to move forward and detect and avoid objects. Furthermore, with states, the Robot Shark can indicate to the audience which state it is currently in through the colors of the LED strip. I learned that the shark required many different pieces of hardware to assemble in order to allow it to move, including the rubber grip for traction and the bottom cover to enclose all the electronics.
 
-![mock-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/2c5dd04f-ef85-4c20-98ed-1c208773a3ff)
-![backside-roboshark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5a6ce73e-c64f-43cd-9651-93a3f35ecc4b)
+![mock-robo-shark](mock-robo-shark.jpg)
+![backside-roboshark](backside-roboshark.jpg)
 
 ### Conclusion
 Overall, I am very happy with the assembly of the whole shark and how it was designed and programmed, enabling the vehicle to respond based on the environment using different states. If I had gone back to create the pockets for fitting the electronics, I would have drilled the distance sensor pocket closer to the front of the vehicle. This is because the distance sensor is placed 1 1/2 inches in depth, and it is unable to detect a satisfactory value of distance; the distance sensor can only detect objects that are fairly close (1-2 inches). This adjustment would enable me to program the distance values more freely so that the robot vehicle can detect far away objects and respond accordingly.
