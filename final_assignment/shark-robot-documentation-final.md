@@ -22,7 +22,7 @@ if program_state == 'DANCE':
 I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle's direction. I even tested a prototype of the vehicle with servos moving in random directions. I combined this dancing direction of the robot with the moving vehicle sensor by implementing two states: 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
 
 ## Implementation
-![electric-chasis](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/1f5b9853-e32b-4224-a5bd-326c36e7d7ed)
+![electric-chasis](electric-chasis.jpg)
 
 MVP Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)  
 In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input and output through code. I utilized an extension battery pack to enable the vehicle to move freely. The MVP of this vehicle has two states: moving forward, detecting light, and stopping when no light has been detected, and the second state allowing it to dance.
@@ -35,7 +35,7 @@ In order for my vehicle to move, I connected my servos and light sensors to Atom
 
 
 ### Firmware
-![Shark Robot Flow Diagram](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/96a8dfb3-a210-447a-baad-9fe099265458)
+![Shark Robot Flow Diagram](shark-robot-flow-diagram.jpg)
 
 #### Servos
 * **Left Servo** - moves the left wheel of the vehicle.
@@ -230,9 +230,9 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 ### Mechanical Design
-![shark-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/4e940049-1634-4940-931a-55ad55d903c2)
-![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/954cca48-68f6-40e7-b0fe-bfdb847472a3)
-![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/b5eb67f4-c12b-423f-8c65-af88a1f521ef)
+![shark-pockets](shark-pockets.jpg)
+![filled-pockets](filled-pockets.jpg)
+![high-build-shark](high-build-shark.jpg)
 ![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/e19a45a8-fda6-49f2-b712-474e24c33a13)
 
 
