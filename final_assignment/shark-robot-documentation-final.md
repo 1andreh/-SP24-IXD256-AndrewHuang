@@ -1,11 +1,10 @@
 # Spaceship Shark Robot
 ## Introduction
-After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection.
-So I started sketching two different ways for the vehicle to trigger the responses.
+After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection. So I began sketching two different ways for the vehicle to trigger responses.
 
 ### Sketch 1: 
 ![Car Sensor](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/6a924351-e02c-40b5-8df2-89248edfedfb)
-I ended up following this concept of having two servoe as front wheels with a rolling backwheel to establish minimal space while achieving the vehicle to move forward, backwards, turn right, and left. I also ended up implementing the sensors, since I want the vehicle to have some sort of response when detecting an object. My first sensor I explored was the light sensor, however, I ended up using a distance sensor for my final because there are many objects around the environment of a room; having the robot respond around the objects in the room was found to be more practical than detecting light.
+I ended up following the concept of using two servos as front wheels with a rolling back wheel to minimize space while enabling the vehicle to move forward, backward, turn left, and right. I also implemented sensors to enable the vehicle to respond to objects. Initially, I explored the light sensor, but ultimately chose a distance sensor for its practicality in detecting objects within a room environment.
 
 ### Sketch 2: 
 ![Car Dance](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/7ce1c037-4a1d-41da-a4b7-354855bf3f4f)
@@ -20,19 +19,19 @@ if program_state == 'DANCE':
       servo.move(90)
       servo1.move(90)
 ```
-I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle direction. I even tested a prototype of the vehicle having servos move in random directions. I combined this direction of the robot dancing with the moving vehicle sensor by implementing two states - 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
+I wanted the robot to dance in a sequence because I wanted to learn how to control the robot vehicle's direction. I even tested a prototype of the vehicle with servos moving in random directions. I combined this dancing direction of the robot with the moving vehicle sensor by implementing two states: 1. program_state = 'DANCE' to dance, 2. program_state = 'ON' to move forward detecting light.
 
 ## Implementation
 ![electric-chasis](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/1f5b9853-e32b-4224-a5bd-326c36e7d7ed)
 
 MVP Video Demo: [v0.MOV.zip](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/files/15048859/v0.MOV.zip)  
-In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input output. I used an extension battery pack to allow the vehicle to move freely. The MVP of this vehicle has two states, to move forward, detecting light and stopping when no light has been detected and the second state allowing it to dance.
+In order for my vehicle to move, I connected my servos and light sensors to AtomS3, using UIflow to connect the input and output through code. I utilized an extension battery pack to enable the vehicle to move freely. The MVP of this vehicle has two states: moving forward, detecting light, and stopping when no light has been detected, and the second state allowing it to dance.
 
 ### Hardware
-* **20lb Pink Foam Shark Model** - case for the electronic firmware to go inside with a refined design of a spaceship shark 
-* **Rubber Tires** - keeps traction for the wheels to turn the robot, preventing the vehicle to slip.
-* **Bottom Cover** - screwed into the bottom, covers the electronics inside the shark robot
-* **Lego Connectors** - connects the firmware onto the phone
+* **20lb Pink Foam Shark Model** - case for the electronic firmware to go inside with a refined design of a spaceship shark
+* **Rubber Tires** - keeps traction for the wheels to turn the robot, preventing the vehicle from slipping
+* **Bottom Cover** - clear acrylic cover screwed onto the bottom, covering the electronics inside the shark robot
+* **Lego Connectors** - connects the firmware to the pink foam
 
 
 ### Firmware
@@ -51,10 +50,10 @@ if program_state == 'ON':
         servo.move(65)
         servo1.move(120)
 ```
-As long as the distance sensor is detecting no objects in front of the vehicle, the servoes will move, making the shark robot move forward. The servos have different move values based on different states the robot is in.
+As long as the distance sensor detects no objects in front of the vehicle, the servos will move, causing the shark robot to move forward. The servos have different movement values based on the various states the robot is in.
 
 #### Distance Sensor
-* **Distance Sensor** - the vehicle detects the distance of object in front of sensor, changing program states when detecting                           an object close the the sensor, chanigng the vehicle's program_state = 'BACKUP' when detecting an                               object.
+* **Distance Sensor** - The vehicle detects the distance of objects in front of the sensor, changing program states when                                detecting an object close to the sensor, switching the vehicle's program_state to 'BACKUP' when an                              object is detected.
 ```
     distance = tof_0.get_distance()
     print(distance)
@@ -246,17 +245,13 @@ Because the server needs to run the line to keep connecting, the vehicle needed 
 </div>
 
 ### Outcome
-Summary: 
--
-Summarize the results of your final project implementation and include at least 2 photos of the prototype and a video walkthrough of the functioning demo.
--
+The Robot Shark can have multiple program states, enabling the vehicle to move forward and detect and avoid objects. Furthermore, with states, the Robot Shark can indicate to the audience which state it is currently in through the colors of the LED strip. I learned that the shark required many different pieces of hardware to assemble in order to allow it to move, including the rubber grip for traction and the bottom cover to enclose all the electronics.
+
 ![mock-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/2c5dd04f-ef85-4c20-98ed-1c208773a3ff)
 ![backside-roboshark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5a6ce73e-c64f-43cd-9651-93a3f35ecc4b)
 
 ### Conclusion
--
-As you wrap up the project, reflect on your experience of creating it. Use this as an opportunity to mention any discoveries or challenges you came across along the way. If there is anything you would have done differently, or have a chance to continue the project development given more time or resources, it’s a good way to conclude this section.
--
+Overall, I am very happy with the assembly of the whole shark and how it was designed and programmed, enabling the vehicle to respond based on the environment using different states. If I had gone back to create the pockets for fitting the electronics, I would have drilled the distance sensor pocket closer to the front of the vehicle. This is because the distance sensor is placed 1 1/2 inches in depth, and it is unable to detect a satisfactory value of distance; the distance sensor can only detect objects that are fairly close (1-2 inches). This adjustment would enable me to program the distance values more freely so that the robot vehicle can detect far away objects and respond accordingly.
 
 ### Project references
 [UI Flow](https://uiflow2.m5stack.com)  [Thonny Python](https://thonny.org)
