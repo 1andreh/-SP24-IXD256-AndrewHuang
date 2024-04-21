@@ -1,4 +1,4 @@
-![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5e1e067b-92fc-4020-a1a5-b7aa3b88dd7a)# Spaceship Shark Robot
+# Spaceship Shark Robot
 ## Introduction
 After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection. So I began sketching two different ways for the vehicle to trigger responses.
 
