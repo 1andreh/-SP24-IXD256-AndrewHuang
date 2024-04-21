@@ -1,4 +1,4 @@
-# Spaceship Shark Robot
+![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/5e1e067b-92fc-4020-a1a5-b7aa3b88dd7a)# Spaceship Shark Robot
 ## Introduction
 After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection. So I began sketching two different ways for the vehicle to trigger responses.
 
@@ -230,19 +230,11 @@ if BtnA.wasPressed():
 Because the server needs to run the line to keep connecting, the vehicle needed to be in program_state = 'OFF' using the AtomS3 displa button in order to press program_state to 'DANCE'. I created a display to provide steps on switching task for a good user experience.
 
 ### Mechanical Design
-![shark-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/18531d19-cfd1-4f9c-9ddf-d8cc4c35b385)
-![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/f9d8cead-84a6-4d64-aab3-0dc5d359f095){ width=50% }
-![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/44bf4c48-02a6-4863-9e5c-ae67250be2e4)
-<img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d" alt="white-robo-shark" width="50%">
+![shark-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/4e940049-1634-4940-931a-55ad55d903c2)
+![high-build-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/b5eb67f4-c12b-423f-8c65-af88a1f521ef)
+![filled-pockets](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/954cca48-68f6-40e7-b0fe-bfdb847472a3)
+![white-robo-shark](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/e19a45a8-fda6-49f2-b712-474e24c33a13)
 
-<div style="display: flex;">
-  <div style="flex: 50%; padding: 5px;">
-    <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/44bf4c48-02a6-4863-9e5c-ae67250be2e4" alt="white-robo-shark" style="width: 100%;">
-  </div>
-  <div style="flex: 50%; padding: 5px;">
-    <img src="https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/445a3cbb-2ddd-4155-bd1c-d344b3fb608d" alt="white-robo-shark" style="width: 100%;">
-  </div>
-</div>
 
 ### Outcome
 The Robot Shark can have multiple program states, enabling the vehicle to move forward and detect and avoid objects. Furthermore, with states, the Robot Shark can indicate to the audience which state it is currently in through the colors of the LED strip. I learned that the shark required many different pieces of hardware to assemble in order to allow it to move, including the rubber grip for traction and the bottom cover to enclose all the electronics.
