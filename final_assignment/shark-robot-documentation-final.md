@@ -3,7 +3,7 @@
 After exploring servos and sensors, I wanted to learn how to build a vehicle that moves and detects objects and responds based on the object detection. So I began sketching two different ways for the vehicle to trigger responses.
 
 ### Sketch 1: 
-![Car Sensor](https://github.com/1andreh/-SP24-IXD256-AndrewHuang/assets/158603689/6a924351-e02c-40b5-8df2-89248edfedfb)
+![Car Sensor](car-sensor.jpg)
 I ended up following the concept of using two servos as front wheels with a rolling back wheel to minimize space while enabling the vehicle to move forward, backward, turn left, and right. I also implemented sensors to enable the vehicle to respond to objects. Initially, I explored the light sensor, but ultimately chose a distance sensor for its practicality in detecting objects within a room environment.
 
 ### Sketch 2: 
